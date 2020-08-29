@@ -7,7 +7,7 @@ def main():
     youtube = build('youtube', 'v3', developerKey=api_key)
     
     request = youtube.search().list(
-            part='snippet',
+            part='snippet, contentDetails',
             #forUsername = 'pewdiepie',
             q = 'covid-19 treatment',
             maxResults=50,
