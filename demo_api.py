@@ -27,10 +27,10 @@ def main():
 #    )
 
     request = youtube.search().list(
-        part="id",
+        part="",
         #fields=items(snippet/title),
         maxResults=25,
-        q="cursing"
+        q="COVID-19 treatment",
     )
 
     response = request.execute()
